@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #252525;
+}
+.desh{
+    font-size: 10px;
+    margin-top: -10px;
+}
+
+main{
+    padding-block: 20px;
+    margin-top: 50px;
+}
+
+.cards-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    align-items: start;
+}
+.card-header img{
+    /* display: flex;
+    justify-content: center; */
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+ 
+}
+
+.card{
+        width: 360px;
+        min-height: 400px;
+        box-shadow: 0 0 4px #d4ecff;
+        border-radius: 4px;
+        cursor: pointer;
+        background-color: #fff;
+        overflow: hidden;
+        transition: all .3s ease;
+    }
+
+    .card:hover{
+        box-shadow: 1px 1px 8px #d4ecff;
+        background-color: #f9fdff;
+        transform: translateY(-2px);
+    }
+
+
+    .news-source{
+        margin-block: 15px;
+    }
+
+    .card-content{
+        padding-left: 16px;
+    }
+
+
+    .nav-item.active{
+        color: #fff;
+    }
+ 
+    .copy h6{
+        margin-top:4px
+    }
+
+
+    .copy{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       margin-left: 37%
+    }
+    .slide{
+        width: 10%;
+        font-weight: 700;
+        font-size: 30px;
+        background-color: #e71919;
+        /* transform: skew(-20deg); */
+        z-index: 1;
+        position: relative;
+        margin-left: -154px;
+    }
+
+    .breakingNews h3{
+        width: 80%;
+        animation: scrolling-left2 20s linear infinite;
+        animation-delay: 4s;
+        color: #fff;
+        
+    }
+
+    .breakingNews{
+        background-color: #0a0a0ac1;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        position: relative;
+      
+    }
+
+    @keyframes scrolling-left2 {
+        0% {transform: translateX(0%);
+            -webkit-transform: translateX(0%);}
+          100% {transform: translateX(-200%);
+              -webkit-transform: translateX(-200%);}
+    }
+    
+  
+
+  
